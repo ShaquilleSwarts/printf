@@ -19,4 +19,6 @@ int percent_format(__attribute__((unused))va_list list);
 int reader(const char *format, conver_t f_list[], va_list arg_list);
 int _unsigned_number(unsigned int n);
 int _number(va_list args);
+int unsigned_int_format(va_list list);
+int integer_format(va_list list);
 #endif

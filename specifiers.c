@@ -48,3 +48,38 @@ int percent_format(__attribute__((unused))va_list list)
   _print_char('%');
   return(1);
 }
+
+/**
+ * unsigned_int_format - prints unsigned int 
+ * @list: arguments list
+ * return: numbers 
+ */
+
+int unsigned_int_format(va_list list)
+{
+unsigned int num;
+
+num = va_arg(list, unsigned int);
+if (num == 1)
+{
+return (_unsigned_number(num));
+}
+if (num < 1)
+{
+return (-1);
+}
+return (_unsigned_number(num));
+}
+
+/**
+ * integer_format - prints int 
+ * @list: arguments list
+ * return: numbers 
+ */
+
+int integer_format(va_list list)
+{
+int num_length;
+num_length =_number(list);
+return (num_length);
+}
